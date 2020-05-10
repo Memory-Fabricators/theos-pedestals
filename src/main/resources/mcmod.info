@@ -5,10 +5,10 @@
     "description": "",
     "version": "${version}",
     "mcversion": "${mcversion}",
-    "url": "",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/theos-pedestals",
     "updateUrl": "",
     "authorList": [
-      "Creepinson"
+      "Theo Paris"
     ],
     "credits": "",
     "logoFile": "",
