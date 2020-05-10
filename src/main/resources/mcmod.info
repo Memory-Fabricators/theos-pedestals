@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "pedestals",
+    "name": "Theo's Pedestals",
+    "description": "",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Creepinson"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
