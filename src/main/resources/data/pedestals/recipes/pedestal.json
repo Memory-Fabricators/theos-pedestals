@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    " W ",
+    " S "
+  ],
+  "key": {
+    "C": [
+      {
+        "item": "minecraft:crafting_table"
+      }
+    ],
+    "W": [
+      {
+        "item": "minecraft:oak_planks"
+      }
+    ],
+    "S": [
+      {
+        "item": "minecraft:smooth_stone_slab"
+      }
+    ]
+  },
+  "result": {
+    "item": "pedestals:pedestal",
+    "count": 1
+  }
+}

@@ -37,7 +37,7 @@ public class PedestalsRegistryHandler {
 
     public static final RegistryObject<Item> PEDESTAL_BLOCK_ITEM = ITEMS.register("pedestal",
             () -> new BlockItem(PEDESTAL_BLOCK.get(), new Item.Properties().group(ITEM_GROUP)));
-    public static final RegistryObject<TileEntityType<?>> PEDESTAL_TILE = TILES.register("pedestal",
+    public static final RegistryObject<TileEntityType<PedestalTile>> PEDESTAL_TILE = TILES.register("pedestal",
             () -> TileEntityType.Builder.create(PedestalTile::new, PEDESTAL_BLOCK.get()).build(null));
 
     public static void init() {

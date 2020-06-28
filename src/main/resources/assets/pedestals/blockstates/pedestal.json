@@ -1,13 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "pedestals:pedestal"
-    },
-    "powered=false": {
-      "model": "pedestals:pedestal"
-    },
-    "powered=true": {
-      "model": "pedestals:pedestal"
+      "model": "pedestals:block/pedestal"
     }
   }
 }

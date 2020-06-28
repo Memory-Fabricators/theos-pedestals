@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5bced92a-2ff6-4402-99a9-6033b59da8db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../java/me/creepinson/pedestals/tile/render/PedestalTileRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java/me/creepinson/pedestals/PedestalsMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../java/me/creepinson/pedestals/PedestalsMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java/me/creepinson/pedestals/PedestalsRegistryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../java/me/creepinson/pedestals/PedestalsRegistryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java/me/creepinson/pedestals/block/PedestalBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../java/me/creepinson/pedestals/block/PedestalBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java/me/creepinson/pedestals/tile/PedestalTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../java/me/creepinson/pedestals/tile/PedestalTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockstates/pedestal.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockstates/pedestal.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lang/en_us.lang" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedestal.json" beforeDir="false" afterPath="$PROJECT_DIR$/pedestal.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../item/pedestal.json" beforeDir="false" afterPath="$PROJECT_DIR$/../item/pedestal.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1dxaEDGLmyWI6tOrYDEsieHG02P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../../../../../../Data/Projects/Programming/throw-out-utils-java" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5bced92a-2ff6-4402-99a9-6033b59da8db" name="Default Changelist" comment="" />
+      <created>1593369083659</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593369083659</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="807" y="328" width="424" height="491" key="FileChooserDialogImpl" timestamp="1593369117825">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="807" y="328" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1593369117825" />
+  </component>
+</project>

@@ -94,10 +94,9 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${project.forgeVersion}"
-    implementation 'com.github.creepinson:creepinoutilsmod:1.15.2-SNAPSHOT'
-//    implementation 'curse.maven:creepino-utilities:2988924'
-//    implementation 'curse.maven:creepino-utilities:2989025'
-//    implementation 'curse.maven:creepino-utilities:2989024'
+//    implementation fg.deobf('com.github.creepinson:creepinoutilsmod:1.15.2-SNAPSHOT')
+//    implementation fg.deobf('curse.maven:creepino-utilities:2989988')
+    implementation fg.deobf('curse.maven:creepino-utilities:2991478')
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..

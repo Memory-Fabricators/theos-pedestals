@@ -1,13 +1,12 @@
 {
   "credit": "Made with Blockbench",
-  "parent": "pedestal",
   "textures": {
-    "2": "blocks/gold_block",
-    "3": "blocks/oak_log",
-    "4": "blocks/stonecutter_bottom",
-    "5": "blocks/barrel_bottom",
-    "6": "blocks/crafting_table_top",
-    "particle": "blocks/birch_planks"
+    "2": "block/gold_block",
+    "3": "block/oak_log",
+    "4": "block/stonecutter_bottom",
+    "5": "block/barrel_bottom",
+    "6": "block/crafting_table_top",
+    "particle": "block/birch_planks"
   },
   "elements": [
     {
@@ -18,7 +17,7 @@
       ],
       "to": [
         10,
-        11,
+        14,
         10
       ],
       "rotation": {
@@ -244,12 +243,12 @@
     {
       "from": [
         7,
-        11,
+        14,
         12
       ],
       "to": [
         9,
-        12,
+        15,
         13
       ],
       "rotation": {
@@ -257,7 +256,7 @@
         "axis": "y",
         "origin": [
           15,
-          19,
+          22,
           20
         ]
       },
@@ -321,12 +320,12 @@
     {
       "from": [
         3,
-        11,
+        14,
         7
       ],
       "to": [
         4,
-        12,
+        15,
         9
       ],
       "rotation": {
@@ -334,7 +333,7 @@
         "axis": "y",
         "origin": [
           11,
-          19,
+          22,
           1
         ]
       },
@@ -400,12 +399,12 @@
     {
       "from": [
         7,
-        11,
+        14,
         3
       ],
       "to": [
         9,
-        12,
+        15,
         4
       ],
       "rotation": {
@@ -413,7 +412,7 @@
         "axis": "y",
         "origin": [
           15,
-          19,
+          22,
           11
         ]
       },
@@ -477,12 +476,12 @@
     {
       "from": [
         3,
-        12,
+        15,
         4
       ],
       "to": [
         4,
-        13,
+        16,
         12
       ],
       "rotation": {
@@ -490,7 +489,7 @@
         "axis": "y",
         "origin": [
           -4,
-          20,
+          23,
           14
         ]
       },
@@ -556,12 +555,12 @@
     {
       "from": [
         12,
-        12,
+        15,
         4
       ],
       "to": [
         13,
-        13,
+        16,
         12
       ],
       "rotation": {
@@ -569,7 +568,7 @@
         "axis": "y",
         "origin": [
           5,
-          20,
+          23,
           14
         ]
       },
@@ -635,12 +634,12 @@
     {
       "from": [
         12,
-        11,
+        14,
         7
       ],
       "to": [
         13,
-        12,
+        15,
         9
       ],
       "rotation": {
@@ -648,7 +647,7 @@
         "axis": "y",
         "origin": [
           20,
-          19,
+          22,
           1
         ]
       },
@@ -714,12 +713,12 @@
     {
       "from": [
         4,
-        12,
+        15,
         3
       ],
       "to": [
         12,
-        13,
+        16,
         4
       ],
       "rotation": {
@@ -727,7 +726,7 @@
         "axis": "y",
         "origin": [
           14,
-          20,
+          23,
           11
         ]
       },
@@ -791,12 +790,12 @@
     {
       "from": [
         4,
-        12,
+        15,
         12
       ],
       "to": [
         12,
-        13,
+        16,
         13
       ],
       "rotation": {
@@ -804,7 +803,7 @@
         "axis": "y",
         "origin": [
           14,
-          20,
+          23,
           20
         ]
       },
@@ -868,12 +867,12 @@
     {
       "from": [
         4,
-        11,
+        14,
         4
       ],
       "to": [
         12,
-        13,
+        16,
         12
       ],
       "rotation": {
@@ -881,7 +880,7 @@
         "axis": "y",
         "origin": [
           14,
-          19,
+          22,
           14
         ]
       },

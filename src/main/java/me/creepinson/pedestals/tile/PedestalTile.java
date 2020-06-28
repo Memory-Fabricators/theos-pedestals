@@ -6,8 +6,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
+import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -15,13 +17,14 @@ import net.minecraftforge.items.ItemStackHandler;
 
 import java.util.UUID;
 
-public class PedestalTile extends TileEntity {
+public class PedestalTile extends TileEntity implements ITickableTileEntity {
     public double speed = 2;
     private LazyOptional<ItemStackHandler> lazyHandler;
     private ItemStackHandler handler = new ItemStackHandler(1);
     private boolean locked;
     public boolean hovering = true;
     protected UUID owner;
+    private int age;
 
     public PedestalTile() {
         super(PedestalsRegistryHandler.PEDESTAL_TILE.get());
@@ -37,7 +40,8 @@ public class PedestalTile extends TileEntity {
         markDirty();
         if (world != null) {
             BlockState state = world.getBlockState(getPos());
-            world.notifyBlockUpdate(getPos(), state, state, 3);
+            world.updateComparatorOutputLevel(pos, state.getBlock());
+            world.notifyBlockUpdate(pos, state, state, 3);
         }
     }
 
@@ -122,5 +126,24 @@ public class PedestalTile extends TileEntity {
     public <T> LazyOptional<T> getCapability(Capability<T> cap, Direction side) {
         return cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY ? (LazyOptional<T>) lazyHandler
                 : LazyOptional.empty();
+    }
+
+    @Override
+    public AxisAlignedBB getRenderBoundingBox() {
+        return INFINITE_EXTENT_AABB;
+    }
+
+    public int getOutputLevel() {
+        if (!this.isEmpty()) return this.getStack().getCount();
+        else return 0;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+
+    @Override
+    public void tick() {
+        if (!this.removed) this.age++;
     }
 }

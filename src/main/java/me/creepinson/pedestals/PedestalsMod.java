@@ -1,7 +1,13 @@
 package me.creepinson.pedestals;
 
+import me.creepinson.pedestals.tile.render.PedestalTileRenderer;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 /**
  * @author Creepinson http://gitlab.com/creepinson
@@ -11,7 +17,6 @@ import net.minecraftforge.fml.common.Mod;
 public class PedestalsMod {
 
     public static final String MOD_ID = "pedestals";
-    private static final String VERSION = "1.0.0";
 
     public PedestalsMod() {
         // Register ourselves for server and other game events we are interested in
@@ -19,5 +24,13 @@ public class PedestalsMod {
 
         // Register the items, blocks, etc. for the mod
         PedestalsRegistryHandler.init();
+
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
+
+    }
+
+    private void clientSetup(FMLClientSetupEvent event) {
+        RenderTypeLookup.setRenderLayer(PedestalsRegistryHandler.PEDESTAL_BLOCK.get(), RenderType.getCutout());
+        ClientRegistry.bindTileEntityRenderer(PedestalsRegistryHandler.PEDESTAL_TILE.get(), PedestalTileRenderer::new);
     }
 }
