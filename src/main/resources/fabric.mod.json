@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "pedestals",
+	"version": "${version}",
+	"name": "Theo's Pedestals",
+	"description": "",
+	"authors": [
+		"Theo Paris"
+	],
+	"contact": {
+		"homepage": "https://minecraft-mods.zip/",
+		"sources": "https://code.flowtr.dev/theoparis/pedestals-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/modid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"adapter": "kotlin",
+				"value": "com.theoparis.PedestalsMod"
+			}
+		],
+		"client": [
+			{
+				"adapter": "kotlin",
+				"value": "com.theoparis.PedestalsModClient"
+			}
+		]
+	},
+	"mixins": [
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.3",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.10.16+kotlin.1.9.21"
+	},
+	"suggests": {
+	}
+}
