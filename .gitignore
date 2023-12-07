@@ -12,5 +12,6 @@
 !.gitattributes
 !ASSETS_LICENSE.txt
 !LICENSE
+!renovate.json
 
 src/generated/resources/\.cache/
