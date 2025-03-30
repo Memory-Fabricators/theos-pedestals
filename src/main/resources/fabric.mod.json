@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://minecraft-mods.zip/",
-		"sources": "https://code.flowtr.dev/theoparis/pedestals-mod"
+		"sources": "https://github.com/memory-fabricators/pedestals-mod"
 	},
 	"license": "MIT",
 	"icon": "assets/modid/icon.png",
@@ -32,7 +32,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15.0",
-		"minecraft": "~1.20.3",
+		"minecraft": "~1.21.5",
 		"java": ">=21",
 		"fabric-api": "*",
 		"fabric-language-kotlin": ">=1.10.16+kotlin.1.9.21"
