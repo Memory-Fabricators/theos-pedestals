@@ -8,8 +8,8 @@
 		"Theo Paris"
 	],
 	"contact": {
-		"homepage": "https://minecraft-mods.zip/",
-		"sources": "https://github.com/memory-fabricators/pedestals-mod"
+		"homepage": "https://github.com/Memory-Fabricators/theos-pedestals",
+		"sources": "https://github.com/memory-fabricators/theos-pedestals"
 	},
 	"license": "MIT",
 	"icon": "assets/modid/icon.png",

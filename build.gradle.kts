@@ -4,7 +4,7 @@ plugins {
 	id("fabric-loom") version "1.10.5"
 	id("maven-publish")
 	id("org.jmailen.kotlinter") version "5.0.1"
-	id("org.jetbrains.kotlin.jvm") version "2.1.20"
+	id("org.jetbrains.kotlin.jvm") version "2.1.21"
 }
 
 repositories {
@@ -35,9 +35,9 @@ tasks.processResources {
 dependencies {
 	minecraft("com.mojang:minecraft:1.21.5")
 	mappings("net.fabricmc:yarn:1.21.5+build.1:v2")
-	modImplementation("net.fabricmc:fabric-loader:0.16.10")
-	modImplementation("net.fabricmc.fabric-api:fabric-api:0.119.6+1.21.5")
-	modImplementation("net.fabricmc:fabric-language-kotlin:1.13.2+kotlin.2.1.20")
+	modImplementation("net.fabricmc:fabric-loader:0.16.14")
+	modImplementation("net.fabricmc.fabric-api:fabric-api:0.127.0+1.21.5")
+	modImplementation("net.fabricmc:fabric-language-kotlin:1.13.3+kotlin.2.1.21")
 }
 
 //processResources {

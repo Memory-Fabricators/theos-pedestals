@@ -1,14 +1,23 @@
 {
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"dependencyDashboard": true,
-	"extends": [
-		"config:best-practices",
-		"group:allNonMajor"
-	],
-	"schedule": [
-		"every weekend"
-	],
-	"packageRules": [
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "dependencyDashboard": true,
+  "schedule": ["every weekend"],
+  "packageRules": [
+  	{
+      "matchDepTypes": ["devDependencies"],
+      "matchPackageNames": ["lint", "prettier"],
+      "automerge": true
+    },
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
 		{
 			"description": "Correct Fabric API version handling",
 			"matchPackageNames": ["net.fabricmc.fabric-api:fabric-api"],
