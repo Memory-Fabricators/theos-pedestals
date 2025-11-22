@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
 	id("fabric-loom") version "1.13.4"
 	id("maven-publish")
-	id("org.jmailen.kotlinter") version "5.0.1"
+	id("org.jmailen.kotlinter") version "5.3.0"
 	id("org.jetbrains.kotlin.jvm") version "2.2.21"
 }
 
