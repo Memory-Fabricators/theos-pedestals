@@ -1,67 +1,32 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-
 plugins {
-	id("fabric-loom") version "1.13.6"
-	id("maven-publish")
-	id("org.jmailen.kotlinter") version "5.3.0"
-	id("org.jetbrains.kotlin.jvm") version "2.2.21"
+	java
+	id("xyz.wagyourtail.unimined") version "1.4.2-SNAPSHOT"
 }
 
 repositories {
+	mavenCentral()
+    unimined.neoForgedMaven()
+    unimined.wagYourMaven("snapshots")
 }
 
-loom {
-	splitEnvironmentSourceSets()
-
-	mods {
-		register("pedestals") {
-			sourceSet(sourceSets.main.get())
-			sourceSet(sourceSets.maybeCreate("client"))
-		}
-	}
-
-}
-
-
-tasks.processResources {
-	inputs.property("version", project.version)
-	filesMatching(listOf("fabric.mod.json")) {
-		expand(
-			"version" to "1.1.0",
-		)
-	}
-}
 
 dependencies {
-	minecraft("com.mojang:minecraft:1.21.5")
-	mappings("net.fabricmc:yarn:1.21.5+build.1:v2")
-	modImplementation("net.fabricmc:fabric-loader:0.16.14")
-	modImplementation("net.fabricmc.fabric-api:fabric-api:0.127.0+1.21.5")
-	modImplementation("net.fabricmc:fabric-language-kotlin:1.13.3+kotlin.2.1.21")
+
 }
 
-//processResources {
-//	inputs.property "version", project.version
-//
-//	filesMatching("fabric.mod.json") {
-//		expand "version": inputs.properties.version
-//	}
-//}
+unimined.minecraft {
+	version = property("mcVersion").toString()
 
-tasks.withType<org.gradle.api.tasks.compile.JavaCompile>().configureEach {
-	options.encoding = "UTF-8"
-	options.release = 21
-}
-
-kotlin {
-	compilerOptions {
-		jvmTarget.set(JvmTarget.JVM_21)
+	neoForge {
+		loader(property("forgeVersion").toString())
+		// mixinConfig("mixins.example_mod.json")
 	}
 }
 
-java {
-	withSourcesJar()
-
-	sourceCompatibility = JavaVersion.VERSION_21
-	targetCompatibility = JavaVersion.VERSION_21
+stonecutter {
+	replacements.string {
+		direction = eval(current.version, ">1.7.10")
+		from = "cpw.mods.fml"
+		to = "net.minecraftforge.fml"
+	}
 }
