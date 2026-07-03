@@ -1,0 +1,21 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+issueTrackerURL = "https://github.com/Memory-Fabricators/theos-pedestals/"
+license = "MIT"
+
+[[mods]]
+modId = "pedestals"
+version = "1.1.0"
+displayName = "Theo's Pedestals"
+authors = "Theo Paris"
+description = ""
+
+[[mixins]]
+#config = "modid.mixins.json"
+
+[[dependencies.pedestals]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.2]"
+ordering = "NONE"
+side = "BOTH"

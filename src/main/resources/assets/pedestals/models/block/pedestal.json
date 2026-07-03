@@ -1,12 +1,12 @@
 {
-	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"2": "minecraft:block/gold_block",
-		"3": "minecraft:block/oak_log",
-		"4": "minecraft:block/stonecutter_bottom",
-		"5": "minecraft:block/barrel_bottom",
-		"6": "minecraft:block/crafting_table_top",
-		"particle": "minecraft:block/birch_planks"
+		"2": "block/gold_block",
+		"3": "block/oak_log",
+		"4": "block/stonecutter_bottom",
+		"5": "block/barrel_bottom",
+		"6": "block/crafting_table_top",
+		"particle": "block/birch_planks"
 	},
 	"elements": [
 		{
