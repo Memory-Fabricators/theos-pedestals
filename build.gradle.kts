@@ -4,7 +4,7 @@ plugins {
 	id("fabric-loom") version "1.13.6"
 	id("maven-publish")
 	id("org.jmailen.kotlinter") version "5.3.0"
-	id("org.jetbrains.kotlin.jvm") version "2.2.21"
+	id("org.jetbrains.kotlin.jvm") version "2.4.10"
 }
 
 repositories {
